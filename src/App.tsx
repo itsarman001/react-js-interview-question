@@ -1,7 +1,13 @@
-export default function App() {
+import { CounterProvider } from "@/context/counterContext";
+import { MainLayout } from "@/layouts/MainLayout";
+function App() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold">React-Js-Interview-Question</h1>
-    </div>
+    <main>
+      <CounterProvider>
+        <MainLayout />
+      </CounterProvider>
+    </main>
   );
 }
+
+export default App;
