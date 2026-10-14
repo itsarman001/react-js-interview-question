@@ -8,6 +8,8 @@ import { MainLayout } from "@/layouts/MainLayout";
 import { MemoLayout } from "@/layouts/MemoLayout";
 import { FormLayout } from "@/layouts/FormLayout";
 import { UseImperativeParent } from "@/components/useImperativeHandle/use-imperative-parent";
+import { UseTransitionDemo } from "@/components/use-transition";
+import { UseDeferredValueDemo } from "@/components/use-deferred-value-demo";
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         {/* <MemoLayout /> */}
 
         {/* <FormLayout /> */}
-        <UseImperativeParent />
+        {/* <UseImperativeParent /> */}
+        {/* <UseTransitionDemo /> */}
+        <UseDeferredValueDemo />
       </main>
     </ThemeProvider>
   );
