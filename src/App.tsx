@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { MainLayout } from "@/layouts/MainLayout";
 import { MemoLayout } from "@/layouts/MemoLayout";
 import { FormLayout } from "@/layouts/FormLayout";
+import { UseActionStateLayout } from "@/layouts/UseActionStateLayout";
+
 import { UseImperativeParent } from "@/components/useImperativeHandle/use-imperative-parent";
 import { UseTransitionDemo } from "@/components/use-transition";
 import { UseDeferredValueDemo } from "@/components/use-deferred-value-demo";
@@ -24,11 +26,12 @@ function App() {
         </CounterProvider> */}
 
         {/* <MemoLayout /> */}
-
         {/* <FormLayout /> */}
+        <UseActionStateLayout />
+
         {/* <UseImperativeParent /> */}
         {/* <UseTransitionDemo /> */}
-        <UseDeferredValueDemo />
+        {/* <UseDeferredValueDemo /> */}
       </main>
     </ThemeProvider>
   );
