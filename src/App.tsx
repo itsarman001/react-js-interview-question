@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 
 import { MainLayout } from "@/layouts/MainLayout";
 import { MemoLayout } from "@/layouts/MemoLayout";
+import { FormLayout } from "@/layouts/FormLayout";
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
       </Header>
 
       <main className="mx-auto max-w-6xl space-y-6 px-4 py-8 sm:px-6">
-        <CounterProvider>
+        {/* <CounterProvider>
           <MainLayout />
-        </CounterProvider>
+        </CounterProvider> */}
 
-        <MemoLayout />
+        {/* <MemoLayout /> */}
+
+        <FormLayout />
       </main>
     </ThemeProvider>
   );
