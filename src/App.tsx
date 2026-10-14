@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { MainLayout } from "@/layouts/MainLayout";
 import { MemoLayout } from "@/layouts/MemoLayout";
 import { FormLayout } from "@/layouts/FormLayout";
+import { UseImperativeParent } from "@/components/useImperativeHandle/use-imperative-parent";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
 
         {/* <MemoLayout /> */}
 
-        <FormLayout />
+        {/* <FormLayout /> */}
+        <UseImperativeParent />
       </main>
     </ThemeProvider>
   );
