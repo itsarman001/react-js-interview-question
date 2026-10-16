@@ -1,4 +1,4 @@
-import { Input } from "@/components/Form/Input";
+import { Input } from "@/hooks/built-in/use-id/Input";
 
 export const FormLayout = () => {
   return (
