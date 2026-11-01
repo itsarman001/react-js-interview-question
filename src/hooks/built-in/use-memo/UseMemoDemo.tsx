@@ -5,7 +5,7 @@ const ExpensiveComponent = () => {
   const sum = () => {
     console.log("Calculating sum...");
     let i = 0;
-    for (i; i < 1000000000; i++) {
+    for (i; i < 1_000_000; i++) {
       i += 1;
     }
     console.log("Sum calculated:", i);

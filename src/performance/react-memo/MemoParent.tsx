@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { MemoChild } from "@/components/memo/react-memo/memo-child";
-import { MemoChildWithObject } from "@/components/memo/react-memo/memo-child-with-object";
+import { MemoChild } from "@/performance/react-memo/MemoChild";
+import { MemoChildWithObject } from "@/performance/react-memo/MemoChildWithObject";
 
 export const MemoParent = () => {
   const [count, setCount] = useState(0);

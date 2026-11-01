@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import {
   UseImperativeInput,
   type InputHandle,
-} from "@/components/useImperativeHandle/use-imperative-input";
+} from "@/hooks/built-in/use-imperative-handle/UseImperativeInput";
 import { useRef } from "react";
 
 export const UseImperativeParent = () => {

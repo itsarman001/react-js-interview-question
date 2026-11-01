@@ -13,13 +13,25 @@ export const UseTransitionDemo = () => {
     startTransition(() => setFilter(value));
   };
 
-  const visible = ITEMS.filter((item) => item.includes(filter));
+  const matchingItems = ITEMS.filter((item) => item.includes(filter));
+  const visible = matchingItems.slice(0, 100);
 
   return (
     <div className="space-y-3">
-      <input value={query} onChange={handleChange} />
+      <input
+        aria-label="Filter items"
+        className="w-full rounded-md border border-input bg-background px-3 py-2"
+        value={query}
+        onChange={handleChange}
+      />
       {isPending && <p>Updating list...</p>}
-      <ul style={{ opacity: isPending ? 0.5 : 1 }}>
+      <p className="text-sm text-muted-foreground">
+        {matchingItems.length.toLocaleString()} matching items
+      </p>
+      <ul
+        className="max-h-48 overflow-auto"
+        style={{ opacity: isPending ? 0.5 : 1 }}
+      >
         {visible.map((item) => (
           <li key={item}>{item}</li>
         ))}

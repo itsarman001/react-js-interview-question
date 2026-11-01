@@ -1,4 +1,4 @@
-import { useCounter } from "../context/counterContext.tsx";
+import { useCounter } from "@/hooks/built-in/use-context/counter-context";
 
 export const Counter = () => {
   const { count, increment, decrement, reset } = useCounter();

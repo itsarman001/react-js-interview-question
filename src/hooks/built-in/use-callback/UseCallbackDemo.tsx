@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { UseCallbackButton as Button } from "@/components/memo/use-callback-button";
+import { UseCallbackButton as Button } from "@/hooks/built-in/use-callback/UseCallbackButton";
 
 export const UseCallback = () => {
   const [count, setCount] = useState(0);
